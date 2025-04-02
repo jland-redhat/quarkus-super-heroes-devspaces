@@ -1,0 +1,13 @@
+schemaVersion: 2.1.0
+metadata:
+  name: pycharm-workspace
+components:
+  - attributes:
+      controller.devfile.io/merge-contribution: true
+    container:
+      image: registry.redhat.io/devspaces/udi-rhel8
+      memoryLimit: 2G
+      cpuLimit: 500m
+      mountSources: true
+      sourceMapping: /projects
+    name: python
